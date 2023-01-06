@@ -8,8 +8,10 @@ import Listitems from './Listitems';
 const App = () => {
 
   const [image, setimage] = useState("")
+  const [imageFile, setimageFile] = useState("")
   const handleFile = (e) => {
     let file = e.target.files[0]
+    setimageFile(file)
     const reader = new FileReader()
     reader.onload = function (event) {
       setimage(event.target.result)
@@ -34,7 +36,7 @@ const App = () => {
           </div>
         </div>
         <div>
-          <Listitems image={image} />
+          <Listitems image={image} imageFile={imageFile}/>
         </div>
       </div>
     </div>
