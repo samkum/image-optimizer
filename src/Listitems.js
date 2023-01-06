@@ -3,7 +3,7 @@ import { blobToURL, fromBlob } from 'image-resize-compress';
 
 const Listitems = ({ image, imageFile }) => {
 
-  const [ downloadFile, setdownloadFile ] = useState("")
+  const [downloadFile, setdownloadFile] = useState("")
 
   const handleBlob = (blobFile) => {
     // quality value for webp and jpeg formats.
@@ -45,11 +45,10 @@ const Listitems = ({ image, imageFile }) => {
                 <td> Wordpress </td>
                 <td> <img className='listimg' src={image} alt="" /> </td>
                 <td> <button className='btn btn-primary' onClick={() => handleBlob(imageFile)}>Convert</button> </td>
-                <td> 
-                  {console.log(downloadFile)}
+                <td>
                   {
-                  downloadFile ? <a href={downloadFile} download className='btn btn-primary'>Download</a> : null
-                }
+                    downloadFile ? <a href={downloadFile} download className='btn btn-primary'>Download</a> : null
+                  }
                 </td>
               </tr></> : null
         }

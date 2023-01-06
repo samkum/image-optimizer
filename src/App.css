@@ -1,57 +1,87 @@
  @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
- body{
+
+ body {
    font-family: 'Open Sans', sans-serif;
  }
-.main{
-  background-color: white;
-  height: 80vh;
-  border-radius: 12px;
-  /* box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); */
-  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-  width: 80%;
-}
-.mainback{
-  background-color:teal;
-  height: 100vh;
-}
-.title{
-  height: 50px;
-  background-color: rgba(0,0,0,0.5);
-  color: white;
-  border-radius:  12px 12px 0px 0;
-}
-.image{
-  width: 100%;
-  object-fit: cover;
-  height: 100%;
-  object-position: center center;
-}
-.image-select-container{
-  height: 100%;
-  background-color: rgba(0,0,0,0.2);
-  position: relative;
-}
-.input{
-  height: 100%;
-  opacity: 0;
-  z-index: 1;
-}
-.image-text{
-  position: absolute;
-  z-index: 0;
-}
-.mainc{
-  height: 50%;
-}
-.listimg{
-  width: 100px;
-  object-fit: cover;
-}
-.table td{
-  vertical-align: middle;
-  border: 1px solid rgba(0,0,0,0.19);
-  padding: 5px;
-}
-.table button, a{
-  background-color: teal !important;
-}
+
+ .main {
+   background-color: white;
+   height: 80vh;
+   border-radius: 12px;
+   /* box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); */
+   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+   width: 80%;
+ }
+
+ .mainback {
+   background-color: teal;
+   height: 100vh;
+ }
+
+ .title {
+   height: 50px;
+   background-color: rgba(0, 0, 0, 0.5);
+   color: white;
+   border-radius: 12px 12px 0px 0;
+ }
+
+ .image {
+   width: 100%;
+   object-fit: cover;
+   height: 100%;
+   object-position: center center;
+ }
+
+ .image-select-container {
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.2);
+   position: relative;
+ }
+
+ .bg-grey {
+   background-color: rgba(0, 0, 0, 0.2);
+ }
+
+ .input {
+   height: 100%;
+   opacity: 0;
+   z-index: 1;
+ }
+
+ .image-text {
+   position: absolute;
+   z-index: 0;
+ }
+
+ .mainc {
+   height: 50%;
+ }
+
+ .listimg {
+   width: 100px;
+   object-fit: cover;
+ }
+
+ .table td {
+   vertical-align: middle;
+   border: 1px solid rgba(0, 0, 0, 0.19);
+   padding: 5px;
+ }
+
+ .table button,
+ a {
+   background-color: teal !important;
+ }
+
+ .right {
+   position: relative;
+ }
+
+ .teal {
+   color: teal;
+   font-weight: 600;
+ }
+
+ .w-40 {
+   width: 40%;
+ }
